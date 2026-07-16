@@ -762,7 +762,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <img src={logo} alt="LYNOVA Digital Solutions" className="h-10 w-auto" />
+            <img src={logo} alt="LYNOVA Digital Solutions" className="h-10 w-auto" loading="lazy" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               LYNOVA Digital Solutions — websites, apps, branding and
               marketing, designed with clarity and purpose.
