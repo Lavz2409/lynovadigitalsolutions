@@ -36,7 +36,7 @@ import {
 import { Toaster } from "@/components/ui/sonner";
 import logoAsset from "@/assets/lynova-logo.png.asset.json";
 const logo = logoAsset.url;
-import heroBg from "@/assets/hero-bg.jpg";
+// hero background is a CSS gradient tuned to the logo palette
 import projHeavenly from "@/assets/portfolio/heavenly-dreamcakes.png";
 import projCafe from "@/assets/portfolio/cafedelvolcan.png";
 import projEcobloom from "@/assets/portfolio/ecobloom.png";
@@ -176,12 +176,14 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-40 pb-28 md:pt-52 md:pb-40">
-      {/* soft blue shapes */}
+      {/* soft navy-tinted light backdrop, aligned with logo palette */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <img
-          src={heroBg}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-70"
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(1200px 600px at 50% -10%, color-mix(in oklab, var(--primary) 18%, white) 0%, transparent 60%), radial-gradient(900px 500px at 80% 110%, color-mix(in oklab, var(--foreground) 10%, white) 0%, transparent 65%), linear-gradient(180deg, var(--background) 0%, var(--surface-alt) 100%)",
+          }}
         />
         <div
           className="blob"
