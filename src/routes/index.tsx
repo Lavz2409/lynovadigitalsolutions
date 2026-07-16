@@ -34,7 +34,8 @@ import {
   Quote,
 } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
-import logo from "@/assets/lynova-logo.png";
+import logoAsset from "@/assets/lynova-logo.png.asset.json";
+const logo = logoAsset.url;
 import heroBg from "@/assets/hero-bg.jpg";
 import projHeavenly from "@/assets/portfolio/heavenly-dreamcakes.png";
 import projCafe from "@/assets/portfolio/cafedelvolcan.png";
@@ -278,11 +279,7 @@ function About() {
               wins. We build products that feel calm to use, easy to trust, and
               made to grow with you.
             </p>
-            <div className="mt-8 grid grid-cols-3 gap-4 border-t border-border pt-8">
-              <div>
-                <div className="text-3xl text-foreground">15+</div>
-                <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">Projects Delivered</div>
-              </div>
+            <div className="mt-8 grid grid-cols-2 gap-4 border-t border-border pt-8">
               <div>
                 <div className="text-3xl text-foreground">100%</div>
                 <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">Custom Built</div>
