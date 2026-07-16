@@ -34,8 +34,7 @@ import {
   Quote,
 } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
-import logoAsset from "@/assets/lynova-logo.png.asset.json";
-const logo = logoAsset.url;
+const logo = "/logo.png";
 // hero background is a CSS gradient tuned to the logo palette
 import projHeavenly from "@/assets/portfolio/heavenly-dreamcakes.png";
 import projCafe from "@/assets/portfolio/cafedelvolcan.png";
